@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function extractVideoIdFromURL() {
+                // expects page URL
+                // player.html#Tjp9E_8chHw
+                videoId = window.location.href.split("#")[1]
+                return videoId
+            }
+            videoId = extractVideoIdFromURL()
+            window.location.replace("http://rowvid.com/?v="+videoId)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
